@@ -32,3 +32,6 @@ def issue_credential():
                                ID=ID,
                                credential_blob=credential_blob)
     return render_template("issue_form.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
