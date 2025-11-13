@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-JAVA_CRED_URL = os.getenv("JAVA_CRED_URL", "http://localhost:8081/generate")
+JAVA_CRED_URL = os.getenv("JAVA_CRED_URL", "http://localhost:8081/issue")
 
 @app.route("/", methods=["GET"])
 def index():
