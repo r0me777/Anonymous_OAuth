@@ -1,0 +1,112 @@
+/* Reset some default spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styling */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card container (for forms and credential display) */
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[name],
+input[name="organization"],
+input[name="ID"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+button {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Credential display area */
+pre {
+  background-color: #f4f8fb;
+  border-left: 4px solid #007bff;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  margin-top: 20px;
+}
+
+/* Link back to home */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Subtext or helper text */
+p {
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+}

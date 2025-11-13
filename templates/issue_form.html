@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Issue Credential</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-$END$
+  <h2>Generate Idemix Credential</h2>
+  <form method="POST">
+    <label>Name:</label>
+    <input name="name" required>
+
+    <label>Organization:</label>
+    <input name="organization" required>
+
+    <label>Enrollment ID</label>
+    <input name="ID" required>
+
+    <button type="submit">Generate Credential</button>
+
+  </form>
 </body>
 </html>
