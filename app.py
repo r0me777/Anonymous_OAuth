@@ -33,14 +33,6 @@ def issue_credential():
                                credential_blob=credential_blob)
     return render_template("issue_form.html")
 
-    from flask import Flask, render_template, request, redirect, url_for, flash
-
-app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Needed for flash messages
-
-JAVA_AUTH_URL = "https://your-auth-server/login"  # Replace with actual URL
-
-
 
 if __name__ == "__main__":
     app.run(debug=True)
